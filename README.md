@@ -55,13 +55,13 @@ Terminal 3: SLAM building a map in RViz2
 
 ## ✨ Features
 
-- **360° LIDAR** — 360 laser beams per scan, 8m range, Gaussian noise model
-- **VFH obstacle avoidance** — polar histogram danger mapping, finds widest open valley
-- **3-state machine** — `EXPLORING` → `AVOIDING` → `RECOVERING` with stuck detection
-- **SLAM mapping** — builds a live occupancy grid map using SLAM Toolbox
-- **RViz2 dashboard** — visualize robot model, laser scan, and live map
-- **Fully tunable** — all parameters adjustable via CLI without restarting
-- **Bag recording ready** — record and replay any run for analysis
+- **360° LIDAR** 360 laser beams per scan, 8m range, Gaussian noise model
+- **VFH obstacle avoidance** polar histogram danger mapping, finds widest open valley
+- **3-state machine** `EXPLORING` → `AVOIDING` → `RECOVERING` with stuck detection
+- **SLAM mapping** builds a live occupancy grid map using SLAM Toolbox
+- **RViz2 dashboard** visualize robot model, laser scan, and live map
+- **Fully tunable** all parameters adjustable via CLI without restarting
+- **Bag recording ready** record and replay any run for analysis
 
 ---
 
@@ -182,16 +182,16 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 
 VFH works in three steps:
 
-1. **Build a polar histogram** — divide the 360° scan into 36 bins of 10° each. For every laser reading closer than the warning distance, increase the danger value in that bin.
+1. **Build a polar histogram** divide the 360° scan into 36 bins of 10° each. For every laser reading closer than the warning distance, increase the danger value in that bin.
 
-2. **Find open valleys** — threshold the histogram to find consecutive bins below the danger threshold. These are the safe directions to travel.
+2. **Find open valleys** threshold the histogram to find consecutive bins below the danger threshold. These are the safe directions to travel.
 
-3. **Steer toward the best valley** — pick the open valley closest to the forward direction and compute the angular correction needed to steer into it.
+3. **Steer toward the best valley** pick the open valley closest to the forward direction and compute the angular correction needed to steer into it.
 
 The state machine adds:
-- **EXPLORING** — path is clear, drive forward at full speed
-- **AVOIDING** — obstacle detected, slow down and steer toward best valley
-- **RECOVERING** — completely stuck, reverse and spin to escape
+- **EXPLORING** path is clear, drive forward at full speed
+- **AVOIDING**  obstacle detected, slow down and steer toward best valley
+- **RECOVERING** completely stuck, reverse and spin to escape
 
 See [`docs/algorithm.md`](docs/algorithm.md) for the full mathematical breakdown.
 
@@ -248,7 +248,7 @@ See [`docs/algorithm.md`](docs/algorithm.md) for the full mathematical breakdown
 
 ## 📄 License
 
-MIT License — free to use, modify, and build on.
+MIT License free to use, modify, and build on.
 
 ---
 
