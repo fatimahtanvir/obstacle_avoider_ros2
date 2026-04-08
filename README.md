@@ -1,4 +1,5 @@
 # 🤖 Autonomous Obstacle-Avoiding Robot using ROS2 + Gazebo
+> ROS 2 · Python · Gazebo · SLAM | Lafayette College · Spring 2026
 
 A fully autonomous differential-drive robot that navigates and avoids obstacles in real time using a **Vector Field Histogram (VFH)** algorithm, built on **ROS2 Humble** and simulated in **Gazebo Classic**. Features a state machine brain, live SLAM mapping, and an RViz2 visualization dashboard.
 
