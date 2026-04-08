@@ -1,4 +1,4 @@
-# 🤖 Autonomous Obstacle-Avoiding Robot — ROS2 + Gazebo
+# 🤖 Autonomous Obstacle-Avoiding Robot using ROS2 + Gazebo
 
 A fully autonomous differential-drive robot that navigates and avoids obstacles in real time using a **Vector Field Histogram (VFH)** algorithm, built on **ROS2 Humble** and simulated in **Gazebo Classic**. Features a state machine brain, live SLAM mapping, and an RViz2 visualization dashboard.
 
@@ -178,7 +178,7 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 
 ---
 
-## 🔬 The Algorithm — Vector Field Histogram (VFH)
+## 🔬 The Algorithm: Vector Field Histogram (VFH)
 
 VFH works in three steps:
 
