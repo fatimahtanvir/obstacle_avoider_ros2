@@ -254,4 +254,4 @@ MIT License free to use, modify, and build on.
 
 ## 👩‍💻 Author
 
-Built by Fatima — spring break 2026.
+Built by Fatima - Lafayette College spring break 2026.
